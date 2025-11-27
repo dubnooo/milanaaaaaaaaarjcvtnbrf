@@ -1,0 +1,158 @@
+/* =========================================
+   1. ОСНОВНІ СТИЛІ ТА ТИПОГРАФІКА
+   ========================================= */
+
+body {
+    /* Фон: Ніжний пудровий/бежевий, більш витончений */
+    font-family: 'Georgia', serif; /* Класичний шрифт для елегантності */
+    background-color: #F8F0F8; /* Світло-пудровий фон */
+    color: #333333; /* Глибокий сірий для основного тексту */
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* =========================================
+   2. HEADER ТА НАВІГАЦІЯ
+   ========================================= */
+
+header {
+    /* Колір: Глибокий малиновий/бордовий або елегантний рожевий */
+    background-color: #A9436E; /* Глибокий малиновий */
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Відстань між елементами */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery {
+    /* Контейнер для зображення в шапці */
+    border: 2px solid #D4B086; /* Ефект золотавої рамки */
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.gallery img {
+    /* Зображення в шапці (Логотип або іконка) */
+    opacity: 0.8; /* Трохи більша прозорість */
+    width: 100px; /* Зменшений розмір для сучасності */
+    height: auto;
+    object-fit: cover;
+    transition: all 0.5s ease;
+    display: block;
+}
+
+.gallery img:hover {
+    opacity: 1;
+    /* Золотавий/бежевий колір для рамки при наведенні */
+    border: 6px solid #D4B086; 
+    width: 110px; /* Менш агресивне збільшення */
+    height: auto;
+    transform: scale(1.05); /* Легке збільшення */
+    padding: 0; /* Прибрано зайвий padding */
+    box-shadow: 0 0 15px rgba(212, 176, 134, 0.8); /* Ефект світіння */
+}
+
+header a {
+    /* Стилі для елементів навігації */
+    color: #FFFFFF; /* Білий текст */
+    background-color: transparent;
+    font-size: 16px;
+    text-decoration: none;
+    border: 2px solid #F0C4DA; /* Легка рожева рамка */
+    border-radius: 20px; /* Більш округлі "пігулки" */
+    padding: 8px 15px;
+    margin: 0;
+    transition: all 0.3s ease;
+    text-transform: uppercase; /* Великі літери */
+    font-weight: bold;
+}
+
+header a:hover {
+    background-color: #D4B086; /* Золотавий фон при наведенні */
+    color: #333333;
+    border-color: #D4B086;
+    transform: translateY(-2px);
+}
+
+/* Перевизначення для класу .m (якщо використовується) */
+.m {
+    background-color: #8C3754; /* Глибший відтінок для активних посилань */
+}
+
+/* =========================================
+   3. ОСНОВНИЙ КОНТЕНТ (MAIN)
+   ========================================= */
+
+h1 {
+    /* Головний заголовок */
+    text-align: center;
+    font-size: 4em; /* Більший розмір */
+    color: #8C3754; /* Глибокий малиновий */
+    margin: 50px auto 30px;
+    letter-spacing: 2px; /* Невеликий інтервал */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    /* Заголовки розділів */
+    background-color: #FFFFFF; /* Білий фон */
+    color: #A9436E; /* Насичений малиновий */
+    font-size: 2em;
+    padding: 15px 30px;
+    margin: 40px 5% 20px;
+    border-left: 5px solid #D4B086; /* Золотавий акцент */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+main p {
+    /* Стилі для блоків тексту */
+    font-size: 1.1em;
+    padding: 30px;
+    margin: 20px 5%;
+    border: none; /* Прибрано товстий бордюр */
+    border-radius: 10px;
+    background-color: #FFFFFF; /* Чистий білий фон для тексту */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05); /* М'яка тінь */
+    text-align: left; /* Вирівнювання по лівому краю виглядає професійніше */
+}
+
+p img {
+    /* Зображення всередині текстових блоків */
+    height: 300px; /* Трохи збільшений розмір */
+    width: 250px;
+    object-fit: cover;
+    margin: 15px auto;
+    display: block; /* Центрування зображень */
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================================
+   4. FOOTER
+   ========================================= */
+
+footer {
+    /* Стилі підвалу */
+    background-color: #A9436E; /* Глибокий малиновий, як шапка */
+    color: #FFFFFF;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer p {
+    /* Текст у підвалі */
+    background-color: transparent; /* Прибрано білий фон */
+    color: #F0C4DA;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Спеціальний клас для акцентного тексту (якщо є) */
+.a {
+    color: #D4B086; /* Золотавий колір */
+}
